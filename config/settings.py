@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1&ce=9wn5#zdc=p0rw+tcy@!2l$is4ozb!02o0_-#h5x)m1pbd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["work-schedule-2022.herokuapp.com", "127.0.0.1"]
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'authentication',
 
     # third party
-    'whitenoise',
+    'whitenoise.runserver_nostatic',
     'rest_framework',
     'corsheaders',
 ]
@@ -143,3 +143,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+WHITENOISE_USE_FINDERS = True
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
