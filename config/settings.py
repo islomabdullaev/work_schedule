@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'authentication',
 
     # third party
+    'whitenoise',
     'rest_framework',
     'corsheaders',
 ]
