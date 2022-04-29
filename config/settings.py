@@ -92,11 +92,11 @@ if DEBUG:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'work_schedule_db',
-            'USER': 'postgres',
-            'PASSWORD': 'postgres',
-            'HOST': 'localhost',
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd9c3fcqestckil',
+            'USER': 'vdxzbcpqsrgpfi',
+            'PASSWORD': '70fe3fc5a0dfcf7811a6916ce04a6c4c0d38a34b97e58b953d4f94271bce8ae9',
+            'HOST': 'ec2-34-194-73-236.compute-1.amazonaws.com',
             'PORT': '5432',
         }
     }
